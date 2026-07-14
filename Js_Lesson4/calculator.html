@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let firstNumber = prompt("Enter your first number");
+        let secondNumber = prompt("Enter your Second number");
+        let operator = prompt("Enter operator:");
+
+
+        // firstNumber = Number(firstNumber)
+        // secondNumber = Number(secondNumber)
+
+
+        // const result = firstNumber + secondNumber
+        let result = 0;
+        if (operator === "+") {
+            result = firstNumber + secondNumber
+        }
+        else if (operator === "-") {
+            result = firstNumber - secondNumber;            
+        }
+        else if (operator === "**") {
+            result = firstNumber ** secondNumber;            
+        }
+        else if (operator === "%"){
+            result = firstNumber % secondNumber
+        }
+        console.log(result);
+
+        
+    </script>
+</body>
+</html>

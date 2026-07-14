@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <script>
+    
+        let score = prompt("Enter your score");
+        let Grade = "";
+        let feedback = "";
+        //the statements
+        if (score > 100) {
+            Grade ="Excess";
+            Message = "Invalid score";
+        }
+         else if (score >= 70) {
+            Grade = "A";
+            Message = "Excellent";
+        }
+        else if (score >= 60) {
+            Grade = "B";
+            Message = "Good job"            
+        }
+        else if (score >= 50) {
+            Grade = "C";
+            Message = "Good"
+        }
+        else if (score >= 45) {
+            Grade = "D";
+            Message = "Fair, Put more effort";
+        }
+        else if (score >= 40) {
+            Grade = "E";
+            Message = "Poor, study Harder";
+        }
+        else if (score >= 30) {
+            Grade = "F";
+            Message = "Very Poor, Don't give up, Try dey read and rewrite the course";
+        }
+        else{
+            Grade = "No Grade for you";
+            Message = "Go home"
+        }
+        console.log(`Grade: ${Grade} | Feedback: ${Message}`);
+    
+
+        
+    </script>
+</body>
+</html>

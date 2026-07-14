@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-Calculator</title>
+</head>
+<body>
+    <script>
+        //variables
+        let billAmount = prompt("Enter your bills,");
+        let tipPercent = prompt("Enter your tipPercent");
+        
+        //Conversion of datatype
+        billAmount = Number(billAmount);
+        tipPercent = Number(tipPercent);
+       //operation
+        const tip = billAmount * (tipPercent/100);
+        const Total = billAmount + tip;
+        
+        //Results
+        console.log(`Bill: ${billAmount}`)
+        console.log(`Tip (${tipPercent}%)`);
+        // console.log(`Amount: ${Amount}`);
+        console.log(`tipAmount: ${tip}`);
+        console.log(`Total: ${Total}`);
+
+
+        /*Assignment 1b*/
+        //the difference b/w loose and strict equality.
+        console.log(10 == "10"); //This is a loose Equality, the operant "==" convert the string into a number before comparing . 
+        console.log(10 === "10"); // this is a strict Equality. the operant "===" does not convert the string into a number, it directly compare the datatype.
+
+        /*Assignment 1c*/
+        // Expressions and Operations
+        let outcome1 = 5 < 3 && 23 < 9;
+        console.log(outcome1); //The operant "&&" compare the variables and give the result "False" as long as one of the variables is False.
+        let outcome2 = 10 ** 2 < (31 - 3) || 6 > 4;
+        console.log(outcome2); // The operant "||" compare the variable and give the result "true" as long as one of the variable is is True.
+        let outcome3 = (2 * 3) >= 6;
+        console.log(outcome3) ;
+
+        /*NaN*/
+        let Invalidnumber = "home" ** "kone";
+        console.log(Invalidnumber);
+
+        let value = Boolean("")
+        console.log(value)
+    </script>
+</body>
+</html>
